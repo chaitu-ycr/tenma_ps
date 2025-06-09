@@ -1,19 +1,21 @@
 [project]
-name = "python_project_template"
-version = "0.1.1"
-description = "My Python Projects Template"
+name = "tenma_ps"
+version = "0.1.0"
+description = "python package for controlling tenma power supply"
 license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.9, <=3.13"
 authors = [{ name = "chaitu-ycr", email = "chaitu.ycr@gmail.com" }]
-keywords = ["python", "template"]
+keywords = ["python", "tenma", "power", "supply", "application"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: Microsoft :: Windows"
 ]
 dependencies = [
-    "requests"
+    "tenma-serial",
+    "customtkinter",
+    "fastapi[all]",
 ]
 
 [project.optional-dependencies]
@@ -32,9 +34,9 @@ dev = [
 ]
 
 [project.urls]
-homepage = "https://github.com/chaitu-ycr/python_project_template"
-repository = "https://github.com/chaitu-ycr/python_project_template"
-documentation = "https://chaitu-ycr.github.io/python_project_template/"
+homepage = "https://github.com/chaitu-ycr/tenma_ps"
+repository = "https://github.com/chaitu-ycr/tenma_ps"
+documentation = "https://chaitu-ycr.github.io/tenma_ps/"
 
 [build-system]
 requires = ["uv_build"]

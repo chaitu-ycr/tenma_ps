@@ -1,2 +1,2 @@
 
-::: src.python_project_template.app
+::: src.tenma_ps.power_supply
